@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
   <diagram id="piw0kPCdBCEwt9jDl069" name="Page-1">
-    <mxGraphModel dx="959" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1391" dy="1310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="2" value="&lt;b&gt;Zabbix&lt;/b&gt;&lt;br&gt;• Détection alerte via tag Stackstorm :&lt;br&gt;https://chk.me/s3iolDw&lt;br&gt;• Envoi via st2_dispatch.py" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="50" width="250" height="120" as="geometry" />
+          <mxGeometry x="30" y="120" width="250" height="120" as="geometry" />
         </mxCell>
         <mxCell id="3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="2" target="4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -13,30 +13,27 @@
             <mxPoint x="320" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4" value="&lt;b&gt;StackStorm&lt;/b&gt;&lt;br&gt;• Réception sur HTTP API&lt;br&gt;• Création Trigger" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="334" y="70" width="160" height="80" as="geometry" />
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="4" target="6" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="100" y="210" as="sourcePoint" />
-            <mxPoint x="150" y="160" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="4" value="&lt;b&gt;StackStorm&lt;/b&gt;&lt;br&gt;• Réception sur HTTP API&lt;br&gt;• Création Trigger" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="140" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="6" value="&lt;b&gt;Trigger Created&lt;/b&gt;&lt;br&gt;zabbix.event_handler" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="334" y="190" width="160" height="60" as="geometry" />
+          <mxGeometry x="640" y="150" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
+        <mxCell id="7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;" parent="1" edge="1" source="6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="413" y="250" as="sourcePoint" />
             <mxPoint x="109" y="330" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="413" y="290" />
+              <mxPoint x="720" y="290" />
               <mxPoint x="109" y="290" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;big_apache_error_log&amp;nbsp; &quot;Apache error log too big&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="330" width="160" height="70" as="geometry" />
+        <mxCell id="8" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;big_apache_error_log&amp;nbsp; &lt;br&gt;Apache error log too big&lt;br&gt;&lt;br&gt;trigger :Apache error log" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="330" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="8" target="10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -44,130 +41,171 @@
             <mxPoint x="150" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="10" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• apache_error_log&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="500" width="160" height="60" as="geometry" />
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="10" target="12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="10" target="12" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="100" y="570" as="sourcePoint" />
-            <mxPoint x="150" y="520" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="10" value="&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;apache_error_log&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="491.62" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="12" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;• Slack&lt;br&gt;• Email&lt;br&gt;• API externe" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="620" width="160" height="80" as="geometry" />
+        <mxCell id="12" value="&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Actions&lt;/b&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_top_website_error&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_size_log_error&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;determine_one_faulty_website&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_one_error_log&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;create_redmine&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;update_redmine&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;warn_customer&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;manager_add_memo&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="599" width="160" height="151" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-12" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;diskfull_home_mysql&amp;nbsp; &quot;Diskfull /home/mysql alarm from Zabbix&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="330" width="160" height="70" as="geometry" />
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-12" target="ASt8sQsPUcLw21a-NTkj-34">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-13" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2_niced_process&amp;nbsp; &quot;process niced alarm checking from zabbix&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="330" width="160" height="70" as="geometry" />
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-12" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;diskfull_home_mysql&amp;nbsp; &lt;br&gt;Diskfull /home/mysql alarm from Zabbix&lt;br&gt;&lt;br&gt;trigger : Diskfull /home/mysq" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="330" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-14" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2web_load_event&amp;nbsp; &quot;Create event auto for alarm concerning h2web load&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="330" width="160" height="70" as="geometry" />
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-13" target="ASt8sQsPUcLw21a-NTkj-36">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-15" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;load_40_h2/od&amp;nbsp; &quot;Loading alarm checking from zabbix" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="750" y="330" width="160" height="70" as="geometry" />
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-13" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2_niced_process&amp;nbsp; &lt;br&gt;process niced alarm checking from zabbix&lt;br&gt;&lt;br&gt;hostname: h2web&lt;br&gt;trigger: Niced processes&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="330" width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-12">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="100" y="330" as="sourcePoint" />
-            <mxPoint x="150" y="280" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-14" target="ASt8sQsPUcLw21a-NTkj-38">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-13">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="100" y="330" as="sourcePoint" />
-            <mxPoint x="150" y="280" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-14" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2web_load_event&amp;nbsp; &lt;br&gt;Create event auto for alarm concerning h2web load&lt;br&gt;&lt;br&gt;hostname: h2web&lt;br&gt;trigger : load critical" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="330" width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-18" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-14">
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-15" target="ASt8sQsPUcLw21a-NTkj-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-15" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;load_40_h2/od&amp;nbsp; &lt;br&gt;Loading alarm checking from zabbix&lt;div&gt;&lt;br&gt;hostname: h2web|od&lt;br&gt;trigger : 40&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="810" y="330" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-13" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="330" as="sourcePoint" />
             <mxPoint x="150" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="290" />
+              <mxPoint x="494" y="290" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-19" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-15">
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-19" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="ASt8sQsPUcLw21a-NTkj-15" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="414" y="290" as="sourcePoint" />
             <mxPoint x="830" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-21" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;mysql_binlog_ratio_data_size&amp;nbsp; &quot;Excessive binlog/data-size ratio (&amp;gt;25%)&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="330" width="160" height="70" as="geometry" />
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-21" target="ASt8sQsPUcLw21a-NTkj-44">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-22" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;load_critical_h2/od&amp;nbsp; &quot;Loading alarm checking from zabbix" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="930" y="330" width="160" height="70" as="geometry" />
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-21" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;mysql_binlog_ratio_data_size&lt;br&gt;Excessive binlog/data-size ratio (&amp;gt;25%)&lt;br&gt;&lt;br&gt;trigger :&amp;nbsp;Excessive binlog/data-size ratio (&amp;gt;25%)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="340" width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-26" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-22">
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-22" target="ASt8sQsPUcLw21a-NTkj-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-22" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;load_critical_h2/od&amp;nbsp; &lt;br&gt;Loading alarm checking from zabbix&lt;br&gt;&lt;br&gt;hostname : h2web|od&lt;br&gt;trigger&amp;nbsp;Load critical" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="990" y="340" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-26" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" target="ASt8sQsPUcLw21a-NTkj-22" edge="1" source="6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="414" y="290" as="sourcePoint" />
             <mxPoint x="830" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="290" />
+              <mxPoint x="1070" y="290" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-27" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-21">
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-27" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" target="ASt8sQsPUcLw21a-NTkj-21" edge="1" source="6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="414" y="290" as="sourcePoint" />
             <mxPoint x="830" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="290" />
+              <mxPoint x="1260" y="290" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-32" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8" target="10">
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-32" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" parent="1" source="8" target="10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="450" as="sourcePoint" />
             <mxPoint x="150" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-34" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• diskfull_home_mysql&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="500" width="160" height="60" as="geometry" />
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-34" target="JeRGGlaL-FfHIDwUhjpZ-12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-35" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-34">
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-34" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;diskfull_home_mysql&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="491.62" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-36" target="JeRGGlaL-FfHIDwUhjpZ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-36" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;h2_niced_process&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="491.62" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-38" target="JeRGGlaL-FfHIDwUhjpZ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-38" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;create_event_auto&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="491.62" width="160" height="58.38" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-40" target="JeRGGlaL-FfHIDwUhjpZ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-40" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;load_data_collection_local&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="810" y="491.62" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-42" target="JeRGGlaL-FfHIDwUhjpZ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-42" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;create_redmine_for_load_link&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="990" y="491.62" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-44" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;mysql_binlogs&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="491.62" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-12" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;wait_from_pushover&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_redmine_issue&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;df_home_mysql&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;find_binlog_position&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;binlogs_count&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;binlogs_rate&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;find_fast_binlog&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;analyze_binlog&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;who_is&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;top_files_by_size&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;top_folders_by_size&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;create_redmine&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;set_redmine_note&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;update_redmine&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;link_redmine&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="599" width="140" height="251" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-15" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;load_data_collection_local&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;create_redmine_for_load_link&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="416.5" y="599" width="155" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-16" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;wait_from_pushover&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_redmine_issue&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_today_date_time&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;check_events&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;rate_limit_event&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;create_event&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;link_event_with_redmine&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="615" y="599" width="170" height="135.5" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-19" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;date&lt;/div&gt;&lt;div&gt;make_dir&lt;/div&gt;&lt;div&gt;get_debian_version&lt;/div&gt;&lt;div&gt;check_load&lt;/div&gt;&lt;div&gt;admintop&lt;/div&gt;&lt;div&gt;file_for_attachment&lt;/div&gt;&lt;div&gt;iotop&lt;/div&gt;&lt;div&gt;netstat&lt;/div&gt;&lt;div&gt;ps_truncated&lt;/div&gt;&lt;div&gt;pstop&lt;/div&gt;&lt;div&gt;selfcheck_httpd_last_logs&lt;/div&gt;&lt;div&gt;selfcheck_mysql_last_logs&lt;/div&gt;&lt;div&gt;summary_load&lt;/div&gt;&lt;div&gt;file_for_attachment&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="597.5" width="140" height="242.5" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-21" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;wait_from_pushover&lt;/div&gt;&lt;div&gt;get_redmine_issue&lt;/div&gt;&lt;div&gt;read_data&lt;/div&gt;&lt;div&gt;create_redmine&lt;/div&gt;&lt;div&gt;update_notes&lt;/div&gt;&lt;div&gt;check_note_length&lt;/div&gt;&lt;div&gt;update_issue_collapse&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="597.5" width="160" height="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-35" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;wait_from_pushover&lt;/div&gt;&lt;div&gt;get_redmine_issue&lt;/div&gt;&lt;div&gt;search_redmine_same_issues&lt;/div&gt;&lt;div&gt;df_home_mysql&lt;/div&gt;&lt;div&gt;find_binlog_position&lt;/div&gt;&lt;div&gt;binlogs_count&lt;/div&gt;&lt;div&gt;binlogs_rate&lt;/div&gt;&lt;div&gt;find_fast_binlog&lt;/div&gt;&lt;div&gt;analyze_binlog&lt;/div&gt;&lt;div&gt;parse_analyze_binlog_output&lt;/div&gt;&lt;div&gt;find_faulty_website&lt;/div&gt;&lt;div&gt;check_if_communicate_to_customer&lt;/div&gt;&lt;div&gt;is_it_wordpress&lt;/div&gt;&lt;div&gt;communicate_to_customer&lt;/div&gt;&lt;div&gt;create_redmine&lt;/div&gt;&lt;div&gt;update_redmine&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="599" width="180" height="261" as="geometry" />
+        </mxCell>
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-38" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-12">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="280" y="400" as="sourcePoint" />
-            <mxPoint x="320" y="400" as="targetPoint" />
+            <mxPoint x="720" y="210" as="sourcePoint" />
+            <mxPoint x="430" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="290" />
+              <mxPoint x="310" y="290" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-36" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• h2_niced_process&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="500" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-37" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-36">
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-39" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="470" y="400" as="sourcePoint" />
-            <mxPoint x="510" y="400" as="targetPoint" />
+            <mxPoint x="720" y="210" as="sourcePoint" />
+            <mxPoint x="710" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="330" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-38" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• create_event_auto&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="500" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-39" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-38">
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-40" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="650" y="400" as="sourcePoint" />
-            <mxPoint x="690" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-40" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• load_data_collection_local&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="740" y="500" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-41" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-40">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="820" y="400" as="sourcePoint" />
-            <mxPoint x="860" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-42" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• create_redmine_for_load_link&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="920" y="500" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-43" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-42">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1000" y="400" as="sourcePoint" />
-            <mxPoint x="1040" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-44" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• mysql_binlogs&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="500" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ASt8sQsPUcLw21a-NTkj-45" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-44">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1200" y="400" as="sourcePoint" />
-            <mxPoint x="1240" y="400" as="targetPoint" />
+            <mxPoint x="414" y="290" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="290" />
+              <mxPoint x="890" y="290" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
