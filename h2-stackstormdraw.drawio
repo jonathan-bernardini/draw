@@ -1,0 +1,176 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram id="piw0kPCdBCEwt9jDl069" name="Page-1">
+    <mxGraphModel dx="959" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;Zabbix&lt;/b&gt;&lt;br&gt;• Détection alerte via tag Stackstorm :&lt;br&gt;https://chk.me/s3iolDw&lt;br&gt;• Envoi via st2_dispatch.py" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="50" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="2" target="4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="210" as="sourcePoint" />
+            <mxPoint x="320" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4" value="&lt;b&gt;StackStorm&lt;/b&gt;&lt;br&gt;• Réception sur HTTP API&lt;br&gt;• Création Trigger" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="334" y="70" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="4" target="6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="210" as="sourcePoint" />
+            <mxPoint x="150" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" value="&lt;b&gt;Trigger Created&lt;/b&gt;&lt;br&gt;zabbix.event_handler" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="334" y="190" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="413" y="250" as="sourcePoint" />
+            <mxPoint x="109" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="413" y="290" />
+              <mxPoint x="109" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;big_apache_error_log&amp;nbsp; &quot;Apache error log too big&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="330" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="8" target="10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="450" as="sourcePoint" />
+            <mxPoint x="150" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• apache_error_log&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="10" target="12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="570" as="sourcePoint" />
+            <mxPoint x="150" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;• Slack&lt;br&gt;• Email&lt;br&gt;• API externe" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="620" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-12" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;diskfull_home_mysql&amp;nbsp; &quot;Diskfull /home/mysql alarm from Zabbix&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="330" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-13" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2_niced_process&amp;nbsp; &quot;process niced alarm checking from zabbix&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="330" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-14" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2web_load_event&amp;nbsp; &quot;Create event auto for alarm concerning h2web load&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="330" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-15" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;load_40_h2/od&amp;nbsp; &quot;Loading alarm checking from zabbix" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="330" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="330" as="sourcePoint" />
+            <mxPoint x="150" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="330" as="sourcePoint" />
+            <mxPoint x="150" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-18" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="330" as="sourcePoint" />
+            <mxPoint x="150" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-19" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="290" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-21" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;mysql_binlog_ratio_data_size&amp;nbsp; &quot;Excessive binlog/data-size ratio (&amp;gt;25%)&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="330" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-22" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;load_critical_h2/od&amp;nbsp; &quot;Loading alarm checking from zabbix" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="330" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-26" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="290" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-27" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="290" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-32" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8" target="10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="450" as="sourcePoint" />
+            <mxPoint x="150" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-34" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• diskfull_home_mysql&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-35" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="400" as="sourcePoint" />
+            <mxPoint x="320" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-36" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• h2_niced_process&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-37" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="400" as="sourcePoint" />
+            <mxPoint x="510" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-38" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• create_event_auto&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-39" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="400" as="sourcePoint" />
+            <mxPoint x="690" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-40" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• load_data_collection_local&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-41" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="820" y="400" as="sourcePoint" />
+            <mxPoint x="860" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-42" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• create_redmine_for_load_link&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-43" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="400" as="sourcePoint" />
+            <mxPoint x="1040" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-44" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;• mysql_binlogs&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ASt8sQsPUcLw21a-NTkj-45" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="ASt8sQsPUcLw21a-NTkj-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1200" y="400" as="sourcePoint" />
+            <mxPoint x="1240" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
