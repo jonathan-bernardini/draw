@@ -20,14 +20,14 @@
           <mxGeometry x="370" y="140" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="6" value="&lt;b&gt;Trigger Created&lt;/b&gt;&lt;br&gt;zabbix.event_handler" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="640" y="150" width="160" height="60" as="geometry" />
+          <mxGeometry x="630" y="150" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;" parent="1" source="6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="413" y="250" as="sourcePoint" />
             <mxPoint x="109" y="330" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="290" />
+              <mxPoint x="710" y="290" />
               <mxPoint x="109" y="290" />
             </Array>
           </mxGeometry>
@@ -60,13 +60,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ASt8sQsPUcLw21a-NTkj-13" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2_niced_process&amp;nbsp; &lt;br&gt;process niced alarm checking from zabbix&lt;br&gt;&lt;br&gt;hostname: h2web&lt;br&gt;trigger: Niced processes&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="414" y="330" width="160" height="110" as="geometry" />
+          <mxGeometry x="414" y="330" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ASt8sQsPUcLw21a-NTkj-14" target="ASt8sQsPUcLw21a-NTkj-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ASt8sQsPUcLw21a-NTkj-14" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;h2web_load_event&amp;nbsp; &lt;br&gt;Create event auto for alarm concerning h2web load&lt;br&gt;&lt;br&gt;hostname: h2web&lt;br&gt;trigger : load critical" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="330" width="160" height="110" as="geometry" />
+          <mxGeometry x="615" y="330" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ASt8sQsPUcLw21a-NTkj-15" target="ASt8sQsPUcLw21a-NTkj-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -79,7 +79,7 @@
             <mxPoint x="100" y="330" as="sourcePoint" />
             <mxPoint x="150" y="280" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="290" />
+              <mxPoint x="710" y="290" />
               <mxPoint x="494" y="290" />
             </Array>
           </mxGeometry>
@@ -94,20 +94,20 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ASt8sQsPUcLw21a-NTkj-21" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;mysql_binlog_ratio_data_size&lt;br&gt;Excessive binlog/data-size ratio (&amp;gt;25%)&lt;br&gt;&lt;br&gt;trigger :&amp;nbsp;Excessive binlog/data-size ratio (&amp;gt;25%)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1180" y="340" width="160" height="110" as="geometry" />
+          <mxGeometry x="1180" y="330" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ASt8sQsPUcLw21a-NTkj-22" target="ASt8sQsPUcLw21a-NTkj-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ASt8sQsPUcLw21a-NTkj-22" value="&lt;b&gt;Rule Match&lt;/b&gt;&lt;br&gt;load_critical_h2/od&amp;nbsp; &lt;br&gt;Loading alarm checking from zabbix&lt;br&gt;&lt;br&gt;hostname : h2web|od&lt;br&gt;trigger&amp;nbsp;Load critical" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="990" y="340" width="160" height="100" as="geometry" />
+          <mxGeometry x="990" y="330" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="ASt8sQsPUcLw21a-NTkj-26" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-22" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="414" y="290" as="sourcePoint" />
             <mxPoint x="830" y="310" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="290" />
+              <mxPoint x="710" y="290" />
               <mxPoint x="1070" y="290" />
             </Array>
           </mxGeometry>
@@ -117,7 +117,8 @@
             <mxPoint x="414" y="290" as="sourcePoint" />
             <mxPoint x="830" y="310" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="290" />
+              <mxPoint x="710" y="210" />
+              <mxPoint x="710" y="290" />
               <mxPoint x="1260" y="290" />
             </Array>
           </mxGeometry>
@@ -144,7 +145,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ASt8sQsPUcLw21a-NTkj-38" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;create_event_auto&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="491.62" width="160" height="58.38" as="geometry" />
+          <mxGeometry x="615" y="491.62" width="160" height="58.38" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ASt8sQsPUcLw21a-NTkj-40" target="JeRGGlaL-FfHIDwUhjpZ-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -158,6 +159,9 @@
         <mxCell id="ASt8sQsPUcLw21a-NTkj-42" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;create_redmine_for_load_link&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="990" y="491.62" width="160" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="2uBdLgdeXdzCSutbb5yo-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ASt8sQsPUcLw21a-NTkj-44" target="JeRGGlaL-FfHIDwUhjpZ-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ASt8sQsPUcLw21a-NTkj-44" value="&lt;b&gt;&amp;nbsp;Workflow&lt;/b&gt;&lt;br&gt;&lt;div&gt;mysql_binlogs&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1180" y="491.62" width="160" height="60" as="geometry" />
         </mxCell>
@@ -168,7 +172,7 @@
           <mxGeometry x="416.5" y="599" width="155" height="71" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-16" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;wait_from_pushover&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_redmine_issue&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get_today_date_time&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;check_events&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;rate_limit_event&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;create_event&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;link_event_with_redmine&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="615" y="599" width="170" height="135.5" as="geometry" />
+          <mxGeometry x="610" y="599" width="170" height="135.5" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-19" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;date&lt;/div&gt;&lt;div&gt;make_dir&lt;/div&gt;&lt;div&gt;get_debian_version&lt;/div&gt;&lt;div&gt;check_load&lt;/div&gt;&lt;div&gt;admintop&lt;/div&gt;&lt;div&gt;file_for_attachment&lt;/div&gt;&lt;div&gt;iotop&lt;/div&gt;&lt;div&gt;netstat&lt;/div&gt;&lt;div&gt;ps_truncated&lt;/div&gt;&lt;div&gt;pstop&lt;/div&gt;&lt;div&gt;selfcheck_httpd_last_logs&lt;/div&gt;&lt;div&gt;selfcheck_mysql_last_logs&lt;/div&gt;&lt;div&gt;summary_load&lt;/div&gt;&lt;div&gt;file_for_attachment&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="597.5" width="140" height="242.5" as="geometry" />
@@ -177,24 +181,25 @@
           <mxGeometry x="990" y="597.5" width="160" height="142.5" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-35" value="&lt;b&gt;Actions&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;wait_from_pushover&lt;/div&gt;&lt;div&gt;get_redmine_issue&lt;/div&gt;&lt;div&gt;search_redmine_same_issues&lt;/div&gt;&lt;div&gt;df_home_mysql&lt;/div&gt;&lt;div&gt;find_binlog_position&lt;/div&gt;&lt;div&gt;binlogs_count&lt;/div&gt;&lt;div&gt;binlogs_rate&lt;/div&gt;&lt;div&gt;find_fast_binlog&lt;/div&gt;&lt;div&gt;analyze_binlog&lt;/div&gt;&lt;div&gt;parse_analyze_binlog_output&lt;/div&gt;&lt;div&gt;find_faulty_website&lt;/div&gt;&lt;div&gt;check_if_communicate_to_customer&lt;/div&gt;&lt;div&gt;is_it_wordpress&lt;/div&gt;&lt;div&gt;communicate_to_customer&lt;/div&gt;&lt;div&gt;create_redmine&lt;/div&gt;&lt;div&gt;update_redmine&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1190" y="599" width="180" height="261" as="geometry" />
+          <mxGeometry x="1170" y="597.5" width="180" height="261" as="geometry" />
         </mxCell>
         <mxCell id="JeRGGlaL-FfHIDwUhjpZ-38" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6" target="ASt8sQsPUcLw21a-NTkj-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="720" y="210" as="sourcePoint" />
             <mxPoint x="430" y="320" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="290" />
+              <mxPoint x="710" y="210" />
+              <mxPoint x="710" y="290" />
               <mxPoint x="310" y="290" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-39" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;" parent="1" source="6" edge="1">
+        <mxCell id="JeRGGlaL-FfHIDwUhjpZ-39" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;edgeStyle=orthogonalEdgeStyle;" parent="1" source="6" edge="1" target="ASt8sQsPUcLw21a-NTkj-14">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="720" y="210" as="sourcePoint" />
             <mxPoint x="710" y="330" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="330" />
+              <mxPoint x="710" y="210" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -203,7 +208,8 @@
             <mxPoint x="414" y="290" as="sourcePoint" />
             <mxPoint x="830" y="310" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="290" />
+              <mxPoint x="710" y="210" />
+              <mxPoint x="710" y="290" />
               <mxPoint x="890" y="290" />
             </Array>
           </mxGeometry>
